@@ -29,13 +29,11 @@ class Cart extends Component {
       <>
         <Box my={2} p={4} borderWidth="2px" borderRadius="lg" overflow="hidden">
           {items.length ? (
-            <ul>
-              {items.map((item, index) => (
-                <Item item={item} key={index} updateCart={updateCart} />
-              ))}
-            </ul>
+            items.map((item, index) => (
+              <Item item={item} key={index} updateCart={updateCart} />
+            ))
           ) : (
-            <div>The shopping cart is empty!</div>
+            <Box>The shopping cart is empty!</Box>
           )}
         </Box>
         <Box my={2} p={4} borderWidth="2px" borderRadius="lg" overflow="hidden">
