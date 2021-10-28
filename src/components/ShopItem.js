@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Box, Image, Button, Text } from "@chakra-ui/react";
  
-function Item(props) {
+function ShopItem(props) {
   const { item, addToCart } = props;
 
   return (
@@ -39,4 +39,4 @@ function Item(props) {
   );
 }
 
-export default Item;
+export default ShopItem;
