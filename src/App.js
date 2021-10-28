@@ -29,7 +29,6 @@ class App extends Component {
       },
       () => {
         window.alert("Item added to the cart!");
-        console.log(this.state.cart);
       }
     );
   };
@@ -44,12 +43,9 @@ class App extends Component {
       cart[item.id].quantity = quantity;
     }
 
-    this.setState(
-      {
-        cart,
-      },
-      () => console.log(this.state.cart)
-    );
+    this.setState({
+      cart,
+    });
   };
 
   clearCart = () => {
